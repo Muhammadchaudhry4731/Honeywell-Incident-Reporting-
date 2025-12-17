@@ -1,10 +1,9 @@
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Honeywell Incident Reporting – Quick Links</title>
+  <title>Honeywell Incident Reporting – Contacts</title>
   <style>
     :root { --brand-red:#e31e24; --text:#1a1a1a; --muted:#666; --bg:#f7f7f8; --card:#fff; --border:#ddd; }
     * { box-sizing:border-box; }
@@ -19,7 +18,6 @@
     .section-title { font-size:1.1rem; font-weight:700; margin:0 0 8px; }
     .hint { color:var(--muted); font-size:.9rem; }
     .panel { margin-top:12px; padding:12px; border:1px dashed var(--border); border-radius:8px; background:#fff; }
-    .qr { width:140px; height:140px; border:1px solid var(--border); border-radius:8px; display:grid; place-items:center; overflow:hidden; background:#fafafa; }
     .contacts { white-space:pre-wrap; }
     .brand { color:var(--brand-red); font-weight:800; }
     .footer { color:var(--muted); font-size:.85rem; text-align:center; margin:24px 0 40px; }
@@ -32,7 +30,7 @@
 <body>
   <header>
     <h1><span class="brand">Honeywell</span> Incident Reporting</h1>
-    <div class="subtitle">All-in-one page for QR codes, nurse triage and contingent labor HSE contacts.</div>
+    <div class="subtitle">Contacts for Honeywell US, Honeywell Canada, and Contingent Labor Providers (no QR codes).</div>
   </header>
   <main>
     <div class="card">
@@ -46,7 +44,7 @@
       <!-- Contingent -->
       <div id="cont-panel" class="panel">
         <div class="section-title">Contingent Labor Providers</div>
-        <div class="hint" id="cont-msg">
+        <div class="hint">
           Please notify your Honeywell Supervisor about your incident first. Then, select your staffing company to view contact details for reporting.
         </div>
 
@@ -64,34 +62,32 @@
         </div>
       </div>
 
-      <!-- US -->
+      <!-- US (no QR) -->
       <div id="us-panel" class="panel" hidden>
         <div class="section-title">Honeywell Employees – US <span class="badge">Care On Site</span></div>
-        <div class="hint">Scan QR or call immediately</div>
-        <div class="qr" id="us-qr"><span>No QR set</span></div>
-        <div class="contacts" style="margin-top:8px">
-          <strong>Phone:</strong> <span id="us-phone">844-501-2273</span><br/>
-          <strong>Important:</strong> <span id="us-note">Please report all work related injuries immediately to your supervisor.</span>
+        <div class="contacts">
+          <strong>Phone:</strong> 844-501-2273
+          <br/>
+          <strong>Important:</strong> Please report all work related injuries immediately to your supervisor.
         </div>
       </div>
 
-      <!-- Canada -->
+      <!-- Canada (no QR) -->
       <div id="ca-panel" class="panel" hidden>
         <div class="section-title">Honeywell Employees – Canada <span class="badge">Windley Ely Nurse Triage</span></div>
-        <div class="hint">Scan QR or call immediately</div>
-        <div class="qr" id="ca-qr"><span>No QR set</span></div>
-        <div class="contacts" style="margin-top:8px">
-          <strong>Phone:</strong> <span id="ca-phone">877-424-5256</span><br/>
-          <strong>Important:</strong> <span id="ca-note">Please report all work related injuries immediately to your supervisor.</span>
+        <div class="contacts">
+          <strong>Phone:</strong> 877-424-5256
+          <br/>
+          <strong>Important:</strong> Please report all work related injuries immediately to your supervisor.
         </div>
       </div>
     </div>
 
-    <div class="footer">This page works offline after the first load. QR images can be added later.</div>
+    <div class="footer">This page works offline after the first load. No QR images used.</div>
   </main>
 
   <script>
-    // Full provider list is embedded below (parsed from your Excel).
+    // Full provider list embedded below (parsed from your Excel).
     const contingentProviders = [
       {"name":"Acro","contact":"David McKinney, HR Generalist; dmckinney@acrocorp.com; (734) 629-5283"},
       {"name":"Akkodis","contact":"AkkodisAssociateSupport@akkodisgroup.com; 844-875-5746; Escalations: Nilsa.Edwards@akkodisgroup.com; Susan.Anderson@akkoidgroup.com"},
@@ -127,7 +123,7 @@
       const category = document.getElementById('category');
       const panels = { us: 'us-panel', canada: 'ca-panel', contingent: 'cont-panel' };
       const showPanel = key => { Object.values(panels).forEach(id => document.getElementById(id).hidden = true); document.getElementById(panels[key]).hidden = false; };
-      showPanel('contingent');
+      showPanel('contingent'); // default to contingent
 
       category.addEventListener('change', e => showPanel(e.target.value));
 
@@ -161,12 +157,9 @@
       });
 
       copyBtn.addEventListener('click', async () => {
-        try {
-          await navigator.clipboard.writeText(contactBox.textContent);
-          copyBtn.textContent = 'Copied!';
-          setTimeout(() => (copyBtn.textContent = 'Copy contact details'), 1500);
-               } catch (e) {}
+        try { await navigator.clipboard.writeText(contactBox.textContent); copyBtn.textContent = 'Copied!'; setTimeout(() => (copyBtn.textContent = 'Copy contact details'), 1500); } catch (e) {}
       });
     })();
   </script>
 </body>
+</
