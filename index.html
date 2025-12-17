@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -27,10 +26,11 @@
     button.copy-btn { padding:12px 18px; border:1.5px solid var(--border); border-radius:10px; background:#fff; cursor:pointer; font-size:1rem; font-weight:600; }
     button.copy-btn:hover { background:#f6f6f6; }
     .footer { color:var(--muted); font-size:1rem; text-align:center; margin:32px 0 40px; }
-    @media (max-width:600px) {
-      .card { padding:18px 6px; }
-      main { padding:0 2px; }
-    }
+    .us-instructions { font-size:1.08rem; margin-bottom:10px; }
+    .us-hotline { color:var(--brand-red); font-weight:700; }
+    .us-contact-list { margin-top:14px; }
+    .us-contact-list strong { color:var(--brand-red); }
+    .us-contact-list a { color:#337ab7; text-decoration:underline; }
   </style>
 </head>
 <body>
@@ -70,11 +70,24 @@
 
       <!-- US -->
       <div id="us-panel" class="panel" hidden>
-        <div class="section-title">Honeywell Employees – US <span class="badge">Care On Site</span></div>
-        <div class="contacts">
-          <strong>Phone:</strong> 844-501-2273<br>
-          <strong>Important:</strong> Please report all work related injuries immediately to your supervisor.<br>
-          <strong>HSE Contact:</strong> (502) 974-0422, (346) 640-2723
+        <div class="section-title">Honeywell Employees – US <span class="badge">Care On Site 24/7 Hotline</span></div>
+        <div class="us-instructions">
+          <ol>
+            <li>
+              <strong>Report all Incidents &amp; Injuries</strong> to the Honeywell <span class="us-hotline">Hotline (844) 501-2273</span> &amp; your Supervisor.<br>
+              Supervisors will in turn notify the assigned Project/HSE Leader.
+            </li>
+            <li>
+              <strong>Vehicle Accidents</strong> involving Company Vehicles (regardless of injury) are reported to the Honeywell Hotline &amp; require a call to the Element Fleet Management Center along with any reports required by local Law Enforcement Agencies.
+            </li>
+          </ol>
+        </div>
+        <div class="contacts us-contact-list">
+          <strong>Care On Site Hotline:</strong> (844) 501-2273<br>
+          <strong>SR Projects HSE – Jonathan Walker:</strong> (337) 465-9281<br>
+          <strong>SR Projects HSE – Mark Williams:</strong> (318) 732-2809<br>
+          <strong>SR HSE Lead – Muhammad Chaudhry:</strong> (346) 640-2723<br>
+          <strong>Fleet Management Call Center:</strong> (800) 641-0062
         </div>
       </div>
 
@@ -163,6 +176,6 @@
       copyBtn.addEventListener('click', async () => {
         try { await navigator.clipboard.writeText(contactBox.textContent); copyBtn.textContent = 'Copied!'; setTimeout(() => (copyBtn.textContent = 'Copy contact details'), 1500); } catch (e) {}
       });
-       })();
-  </script>
+    })();
+   </script>
 </body>
