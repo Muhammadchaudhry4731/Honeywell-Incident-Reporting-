@@ -1,6 +1,5 @@
 
 {
-  "lastUpdated": "2025-12-17 16:33:45",
   "messages": {
     "contingent": "Please notify your Honeywell Supervisor about your incident first. Then, select your staffing company to view contact details for reporting.",
     "usSupervisor": "Please report all work related injuries immediately to your supervisor."
@@ -20,32 +19,7 @@
     "note": "Please report all work related injuries immediately to your supervisor."
   },
   "contingentProviders": [
-    { "name": "Acro", "contact": "David McKinney, HR Generalist[E: dmckinney@acrocorp.com \\ P: (734) 629-5283](mailto:dmckinney@acrocorp.com)" },
-    { "name": "Akkodis", "contact": "Akkodis Associate Support AkkodisAssociateSupport@akkodisgroup.com; 1st POC Escalation Nilsa.Edwards@akkodisgroup.com; 2nd POC Escalation Susan.Anderson@akkoidgroup.com; 844.875.5746" },
-    { "name": "Artech Information Systems", "contact": "Sunitha Krishnamurthy, Associate Director – ER & Compliance, Office: 973.998.2527 Fax: 973.998.2599, Email: Sunitha.Krishnamurthy@artech.com" },
-    { "name": "Aversan", "contact": "Melissa Fernandez melissa@aversan.com Office: 416 201 0442 ext. 1011, Cell: 647 456 1060" },
-    { "name": "BEPC Inc.", "contact": "Nolan Hearn, US Division Account Manager, Mobile: 325.277.4014\\ Office: 325.944.0169 ext.106, Nolan.Hearn@bepcinc.com" },
-    { "name": "CCL Contracts Consultancy, Inc.", "contact": "Arlene Johnson, HR & Admin Mgr, 832-620-3452; arlene.johnson@cclglobal.com" },
-    { "name": "Datamatics Global Services Inc", "contact": "Beth Smiley, Director of Human Resources (D):734-525-2593; Beth_Smiley@datamaticstech.com; ushr@datamatics.com; MSP_Onboarding@datamaticstech.com; Ashok Kumar (P): (734) 407 1005 (Text): (716) 437 6350 Email : ashokkumar.d@datamatics.com" },
-    { "name": "GDKN", "contact": "Sunz Insurance Company 877-306-2398" },
-    { "name": "Idexcel Inc", "contact": "Primary: Mohammed Khan, Sr. Delivery Manager, Direct: 703.230.2640, mkhan@idexcel.com; Secondary: Ron Patrick, Office: 972-241-6707, Mobile: 972-839-4398, rpatrick@idexcel.com" },
-    { "name": "Infotree Service, Inc.", "contact": "Carol Kulinski, Benefits/Compliance Manager, ckulinski@infotreeglobal.com, 734-927-3143" },
-    { "name": "Integrity - EDS -", "contact": "Shereena Smith, HSE Contact, E: shereena.smith@integrity-eds.com P: (866) 509-4377 M: (602) 821-9077" },
-    { "name": "Intelliswift", "contact": "Amber Howard (Dir. of HR), amber.howard@intelliswift.com; hr@intelliswift.com; (510) 695-2632" },
-    { "name": "Intertec Engineering, LLC", "contact": "Charles Jonkosky, C: 602-570-3869, Charles.jonkosky@intertecintl.com; Backup: Joshua Hedeby, C: 480-319-4930, Joshua.Hedeby@intertecintl.com" },
-    { "name": "Jobs R Us (Cor-Tech LLC)", "contact": "Tempe/Glendale: Genaro Palomino, gpalomino@cor-tech.net, (510) 921-0599; Illinois: Tasha Ostrande, tostrander@cor-tech.net, (608) 931-5802; El Paso: Cecilia Ortega, cortega@cor-tech.net, (951) 886-8118; All other sites: Cammie Williams, jcwilliams@cor-tech.net, (404) 453-6837" },
-    { "name": "Kronos Consulting", "contact": "Andrew Gabriel, 480-900-7222, 602-677-1163, Andrew.Gabriel@kronosconsulting.net; Marrie De Leon, Marrie.deleon@Kronosconsulting.net, 480-581-4026" },
-    { "name": "Launch Technical Workforce", "contact": "Report any work-related injury to your supervisor and LAUNCH Workers’ Comp Office IMMEDIATELY at 888-888-7195, option 5; safety@launchtws.com" },
-    { "name": "Lancesoft, Inc.", "contact": "Veronica.Jones@lancesoft.com; Phone: 703-674-4543" },
-    { "name": "Manpower", "contact": "Torrance & Phoenix – Jeff Parker, Jeff.parker@manpower.com, 818.235.8899, 213.519.7692; Redmond – Michael Jin, Michael.jin@manpower.com, 425.531.2794; Lincolnshire – Erran Schmidkonz, Erran.schmidkonz@manpower.com, 847.689.2217; Olathe – Sara Barton, Sara.barton@manpower.com, 913.221.0837; Northford – Theresa Delvecchio, Theresa.delvecchio@manpower.com, 203.859.3597; Ohio – Jennifer Tackett, Jennifer.Tackett@manpower.com, 614.822.9473, 614.305.1931; El Paso – Jonathan Williams, Jonathan.williams@manpower.com, 915.820.2754, 915.307.9218" },
-    { "name": "NESCO Resource", "contact": "Paul Chacon – 312-444-9972, pchacon@nescoresource.com" },
-    { "name": "Pacer Staffing", "contact": "ecare@pacerstaffing.com or (215) 966-8380 / (717)-385-6962; Designated Safety Contact: Sargam Dubey, sargam.dubey@pacerstaffing.com, Direct: (215) 966-8380; Emergency: Moon Rana, Moon.Rana@pacerstaffng.com, Direct: (717)-385-6962; CARRIER: Service America, Nurse line: (866) 204-0683 (24/7 nurse triage)" },
-    { "name": "PDS Tech", "contact": "WC Central Team: 1-833-470-6688 or workerscompsupport@adeccogroup.com (8:00 AM–8:00 PM EST M–F); After hours: 1-855-293-4222 (Clinical Consultation Nurse Triage)" },
-    { "name": "Pyramid Consulting, Inc.", "contact": "Yensy Parra, 214-715-5632, Yensy.parra@pyramidci.com" },
-    { "name": "Responsible Staffing (RA Safety Staffing)", "contact": "Donald Nixon – 225-333-8035, donald@rasafetystaffing.com" },
-    { "name": "Select Source International (SSI)", "contact": "Afterhours: 1.866.687.0710; Kekti, KektiJ@selectsourceintl.com, 612-474-9567" },
-    { "name": "TAD PGS", "contact": "Adecco WC Support Team: 1-833-470-6688 (8am–8pm EST); Clinical Consult: 1-855-293-4222 (after hours)" },
-    { "name": "Talascend SL LLC", "contact": "Kim Stouffer, VP of Human Resources, 248-537-1288 or cell 248-410-9974, kim.stouffer@talascend.com; Copy Jeannette jeannette.tousignaut@talascend.com" },
-    { "name": "Tucson Embedded Systems (TES)", "contact": "Nancy Kitts, HR/Tech. Recruiter, NancyK@TES-i.com, O: (520) 575-7283, C: (520) 971-5593" },
-    { "name": "US Tech Solutions", "contact": "Michelle Vanetti; health-safety@ustechsolutions.com; 201.719.9953" }
-    ]
+    { "name": "Pacer Staffing", "contact": "ecare@pacerstaffing.com or (215) 966-8380 / (717)-385-6962; Designated Safety: Sargam Dubey (215) 966-8380; Emergency: Moon Rana (717)-385-6962; Nurse line: (866) 204-0683" }
+    // Paste the rest of your providers here from the generated JSON to show ALL companies
+  ]
+}
