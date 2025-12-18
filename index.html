@@ -20,12 +20,10 @@
     .section-title { font-size:1.25rem; font-weight:800; margin:0 0 12px; color:var(--brand-red); }
     .hint { color:var(--muted); font-size:1.05rem; margin-bottom:16px; }
     .panel { margin-top:24px; padding:24px; border:1.5px dashed var(--border); border-radius:12px; background:#fff; }
-    .contacts { white-space:pre-wrap; font-size:1.15rem; margin-top:18px; }
-    .contacts .contact-block { margin-bottom:24px; padding-bottom:12px; border-bottom:1px solid #eee; }
-    .contacts .contact-block:last-child { border-bottom:none; }
-    .contacts .contact-title { font-size:1.15rem; font-weight:700; margin-bottom:6px; color:var(--brand-red); }
-    .contacts .contact-main { font-size:1.35rem; font-weight:900; color:var(--brand-red); margin-bottom:8px; }
-    .contacts .contact-desc { font-size:1.1rem; margin-bottom:8px; }
+    .contacts { white-space:pre-wrap; font-size:1.1rem; margin-top:12px; }
+    .big-contact { font-size:2rem; font-weight:900; color:var(--brand-red); margin:18px 0 10px 0; letter-spacing:1px; }
+    .big-label { font-size:1.25rem; font-weight:700; margin-bottom:8px; color:var(--text); }
+    .fleet-contact { font-size:1.5rem; font-weight:900; color:#337ab7; margin:10px 0 10px 0; letter-spacing:1px; }
     .badge { display:inline-block; background:#f2f2f2; color:#333; border:1px solid var(--border); border-radius:999px; padding:4px 14px; font-size:1rem; margin-left:12px; font-weight:700; }
     .copy { margin-top:16px; }
     button.copy-btn { padding:12px 18px; border:1.5px solid var(--border); border-radius:10px; background:#fff; cursor:pointer; font-size:1rem; font-weight:600; }
@@ -34,8 +32,9 @@
     @media (max-width:600px) {
       .card { padding:18px 6px; }
       main { padding:0 2px; }
-      .contacts .contact-main { font-size:1.1rem; }
-      .contacts .contact-title { font-size:1rem; }
+      .big-contact { font-size:1.3rem; }
+      .fleet-contact { font-size:1.1rem; }
+      .big-label { font-size:1rem; }
     }
   </style>
 </head>
@@ -51,7 +50,6 @@
         Please notify your Honeywell Supervisor about your incident first.<br>
         Then, select your staffing company to view contact details for reporting.
       </div>
-
       <label for="category">Select Your Employer or Staffing Company</label>
       <select id="category" aria-label="Select reporting category">
         <option value="contingent">Contingent Labor Providers</option>
@@ -68,55 +66,47 @@
         <label for="provider">Select Your Staffing Company</label>
         <select id="provider" aria-label="Select staffing company"></select>
         <div class="contacts" id="provider-contact">
-          <div class="contact-block">
-            Select a company to view contact details.
-          </div>
+          Select a company to view contact details.
         </div>
         <div class="copy">
           <button class="copy-btn" id="copy-btn" disabled>Copy contact details</button>
         </div>
       </div>
 
-      <!-- US (big, bold, aligned) -->
+      <!-- US (extra large, bold, aligned) -->
       <div id="us-panel" class="panel" hidden>
         <div class="section-title">Honeywell Employees – US <span class="badge">Care On Site 24/7 Hotline</span></div>
         <div class="contacts">
-          <div class="contact-block">
-            <div class="contact-title">Report any work-related Injury immediately to your supervisor &amp; Honeywell Hotline:</div>
-            <div class="contact-main">Care On Site<br>(844) 501-2273</div>
+          <div class="big-label">Report any work-related Injury immediately to your supervisor &amp; Honeywell Hotline:</div>
+          <div class="big-contact">Care On Site<br>(844) 501-2273</div>
+          <div style="margin:24px 0 0 0;"></div>
+          <div class="big-label">Vehicle Accidents involving Company Vehicles:</div>
+          <div style="margin-bottom:8px;">
+            Regardless of injury, report to the Honeywell Hotline (<span style="font-weight:900;color:var(--brand-red);">Care On Site, (844) 501-2273</span>)
+            and call the Element Fleet Management Center:
           </div>
-          <div class="contact-block">
-            <div class="contact-title">Vehicle Accidents involving Company Vehicles:</div>
-            <div class="contact-desc">
-              Regardless of injury, report to the Honeywell Hotline (<span style="font-weight:900;color:var(--brand-red);">Care On Site, (844) 501-2273</span>)<br>
-              and call the Element Fleet Management Center:
-            </div>
-            <div class="contact-main">Element Fleet Management Center<br>(800) 641-0062</div>
-            <div class="contact-desc">
-              Along with any reports required by local Law Enforcement Agencies.
-            </div>
+          <div class="fleet-contact">Element Fleet Management Center<br>(800) 641-0062</div>
+          <div style="margin-top:8px;">
+            Along with any reports required by local Law Enforcement Agencies.
           </div>
         </div>
       </div>
 
-      <!-- Canada (big, bold, aligned) -->
+      <!-- Canada (extra large, bold, aligned) -->
       <div id="ca-panel" class="panel" hidden>
         <div class="section-title">Honeywell Employees – Canada <span class="badge">Windley Ely Nurse Triage</span></div>
         <div class="contacts">
-          <div class="contact-block">
-            <div class="contact-title">Report any work-related Injury immediately to your supervisor &amp; Honeywell Hotline:</div>
-            <div class="contact-main">Windley Ely Nurse Triage<br>(877) 424-5256</div>
+          <div class="big-label">Report any work-related Injury immediately to your supervisor &amp; Honeywell Hotline:</div>
+          <div class="big-contact">Windley Ely Nurse Triage<br>(877) 424-5256</div>
+          <div style="margin:24px 0 0 0;"></div>
+          <div class="big-label">Vehicle Accidents involving Company Vehicles:</div>
+          <div style="margin-bottom:8px;">
+            Regardless of injury, report to the Honeywell Hotline (<span style="font-weight:900;color:var(--brand-red);">Windley Ely Nurse Triage, (877) 424-5256</span>)
+            and call the Element Fleet Management Center:
           </div>
-          <div class="contact-block">
-            <div class="contact-title">Vehicle Accidents involving Company Vehicles:</div>
-            <div class="contact-desc">
-              Regardless of injury, report to the Honeywell Hotline (<span style="font-weight:900;color:var(--brand-red);">Windley Ely Nurse Triage, (877) 424-5256</span>)<br>
-              and call the Element Fleet Management Center:
-            </div>
-            <div class="contact-main">Element Fleet Management Center<br>(800) 411-8500</div>
-            <div class="contact-desc">
-              Along with any reports required by local Law Enforcement Agencies.
-            </div>
+          <div class="fleet-contact">Element Fleet Management Center<br>(800) 411-8500</div>
+          <div style="margin-top:8px;">
+            Along with any reports required by local Law Enforcement Agencies.
           </div>
         </div>
       </div>
@@ -180,29 +170,22 @@
           select.appendChild(opt);
         });
 
-      // Show details immediately on selection, with spacing
+      // Show details immediately on selection
       select.addEventListener('change', () => {
         const sel = select.value;
         const p = contingentProviders.find(x => x.name === sel);
         if (p) {
-          contactBox.innerHTML = `<div class="contact-block"><span class="contact-title">${p.name}</span><br><span class="contact-desc">${p.contact.replace(/;/g, '<br><br>')}</span></div>`;
+          contactBox.textContent = p.contact || 'No contact details available.';
           copyBtn.disabled = false;
         } else {
-          contactBox.innerHTML = `<div class="contact-block">Select a company to view contact details.</div>`;
+          contactBox.textContent = 'Select a company to view contact details.';
           copyBtn.disabled = true;
         }
       });
 
       copyBtn.addEventListener('click', async () => {
-        try {
-          // Strip HTML for clipboard
-          const temp = document.createElement('div');
-          temp.innerHTML = contactBox.innerHTML;
-          await navigator.clipboard.writeText(temp.innerText.trim());
-          copyBtn.textContent = 'Copied!';
-          setTimeout(() => (copyBtn.textContent = 'Copy contact details'), 1500);
-        } catch        } catch (e) {}
+        try { await navigator.clipboard.writeText(contactBox.textContent); copyBtn.textContent = 'Copied!'; setTimeout(() => (copyBtn.textContent = 'Copy contact details'), 1500); } catch (e) {}
       });
     })();
-  </script>
+  </script  </script>
 </body>
