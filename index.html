@@ -26,10 +26,6 @@
     button.copy-btn { padding:12px 18px; border:1.5px solid var(--border); border-radius:10px; background:#fff; cursor:pointer; font-size:1rem; font-weight:600; }
     button.copy-btn:hover { background:#f6f6f6; }
     .footer { color:var(--muted); font-size:1rem; text-align:center; margin:32px 0 40px; }
-    @media (max-width:600px) {
-      .card { padding:18px 6px; }
-      main { padding:0 2px; }
-    }
   </style>
 </head>
 <body>
@@ -44,6 +40,7 @@
         Please notify your Honeywell Supervisor about your incident first.<br>
         Then, select your staffing company to view contact details for reporting.
       </div>
+
       <label for="category">Select Your Employer or Staffing Company</label>
       <select id="category" aria-label="Select reporting category">
         <option value="contingent">Contingent Labor Providers</option>
@@ -57,36 +54,47 @@
         <div class="hint">
           Contractors and Contingent Workers should immediately contact their company and follow their instructions.
         </div>
+
         <label for="provider">Select Your Staffing Company</label>
         <select id="provider" aria-label="Select staffing company"></select>
+
         <div class="contacts" id="provider-contact">
           Select a company to view contact details.
         </div>
+
         <div class="copy">
           <button class="copy-btn" id="copy-btn" disabled>Copy contact details</button>
         </div>
       </div>
 
-      <!-- US (concise, focus: Care On Site, no HSE contacts) -->
+      <!-- US (updated, concise, focus: Care On Site) -->
       <div id="us-panel" class="panel" hidden>
         <div class="section-title">Honeywell Employees – US <span class="badge">Care On Site 24/7 Hotline</span></div>
         <div class="contacts">
-          <strong>Report any work-related Injury immediately</strong> to your supervisor &amp; Honeywell Hotline <strong>(Care On Site, (844) 501-2273)</strong>.<br><br>
-          <strong>Vehicle Accidents</strong> involving Company Vehicles (regardless of injury) are reported to the Honeywell Hotline <strong>(Care On Site, (844) 501-2273)</strong> &amp; require a call to the <strong>Element Fleet Management Center (800) 641-0062</strong> along with any reports required by local Law Enforcement Agencies.
+          <strong>Report any work‑related Injury immediately</strong> to your supervisor &amp; Honeywell Hotline
+          <strong>(Care On Site, (844) 501‑2273)</strong>.<br><br>
+          <strong>Vehicle Accidents</strong> involving Company Vehicles (regardless of injury) are reported to the Honeywell Hotline
+          <strong>(Care On Site, (844) 501‑2273)</strong> &amp; require a call to the
+          <strong>Element Fleet Management Center (800) 641‑0062)</strong> along with any reports required by local Law Enforcement Agencies.
         </div>
       </div>
 
-      <!-- Canada (concise, focus: Windley Ely, no HSE contacts) -->
+      <!-- Canada (updated, concise, focus: Windley Ely) -->
       <div id="ca-panel" class="panel" hidden>
         <div class="section-title">Honeywell Employees – Canada <span class="badge">Windley Ely Nurse Triage</span></div>
         <div class="contacts">
-          <strong>Report any work-related Injury immediately</strong> to your supervisor &amp; Honeywell Hotline <strong>(Windley Ely Nurse Triage, (877) 424-5256)</strong>.<br><br>
-          <strong>Vehicle Accidents</strong> involving Company Vehicles (regardless of injury) are reported to the Honeywell Hotline <strong>(Windley Ely Nurse Triage, (877) 424-5256)</strong> &amp; require a call to the <strong>Element Fleet Management Center (800) 411-8500</strong> along with any reports required by local Law Enforcement Agencies.
+          <strong>Report any work‑related Injury immediately</strong> to your supervisor &amp; Honeywell Hotline
+          <strong>(Windley Ely Nurse Triage, (877) 424‑5256)</strong>.<br><br>
+          <strong>Vehicle Accidents</strong> involving Company Vehicles (regardless of injury) are reported to the Honeywell Hotline
+          <strong>(Windley Ely Nurse Triage, (877) 424‑5256)</strong> &amp; require a call to the
+          <strong>Element Fleet Management Center (800) 411‑8500)</strong> along with any reports required by local Law Enforcement Agencies.
         </div>
       </div>
     </div>
+
     <div class="footer">This page works offline after the first load. No QR images used.</div>
   </main>
+
   <script>
     // Full provider list embedded below (from your Excel). HSE contacts removed per request.
     const contingentProviders = [
@@ -162,4 +170,6 @@
       });
     })();
   </script>
-</</body>
+</body>
+</html>
+``
